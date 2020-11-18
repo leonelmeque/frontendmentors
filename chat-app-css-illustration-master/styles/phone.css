@@ -1,0 +1,227 @@
+.phone{
+    width: 290px;
+    height: 605px;
+    background-color: var(--bg-color);
+    border: white 10px solid;
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative;
+    -webkit-box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 25%);
+    -moz-box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 25%);
+    box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 25%);
+}
+
+.phone-notch{
+    width: 60%;
+    height: 28px;
+    background-color: white;
+    left: 50%;
+    margin:0 -30%;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    top: 0;
+}
+
+.phone-content{
+    width: 95%;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.phone-content-header{
+    background:  linear-gradient(90deg,hsl(264, 100%, 61%),hsl(293, 100%, 63%) );
+    height: 90px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 1px -12px 20px 0px rgba(0,0,0,0.38);
+    -moz-box-shadow: 1px -12px 20px 0px rgba(0,0,0,0.38);
+    box-shadow: 1px -12px 20px 0px rgba(0,0,0,0.38);
+    
+    
+}
+
+.back-arrow{
+    flex:1;
+    color:white;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 25px;
+}
+
+.box{
+    flex: 6;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 10px;
+}
+
+.header-avatar{
+    width: 30px;
+    height: 30px;
+}
+
+.header-avatar img{
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+
+.three-dots{
+    flex:1;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+.header-user-details{
+    margin-left: 10px;
+}
+
+.user-name, .user-status{
+    color: white;
+}
+
+.user-name{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.user-status{
+    font-size: 10px;
+    font-weight: 400;
+    opacity: 0.4;
+}
+
+.message-bubble-left,
+.message-bubble-pricing-left
+{
+    color: var(--chat-left-text-color);
+    font-size: 10px;
+    background-color: rgb(248, 229, 253);
+    padding:8px;
+    width: 140px;
+    height: auto;
+    border-radius: 15px 15px 15px 2px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    word-spacing: 1px;
+    -webkit-box-shadow: var(--bubble-shadow-left);
+    -moz-box-shadow: var(--bubble-shadow-left);
+    box-shadow: var(--bubble-shadow-left);
+}
+
+.shared-images{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-self: flex-end;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.shared-images img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.message-bubble-right{
+    color: var(--chat-right-text-color);
+    font-size: 10px;
+    background-color: white;
+    padding:8px;
+    width: auto;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px 10px 2px 10px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    align-self: flex-end;
+    -webkit-box-shadow: var(--bubble-shadow-right);
+    -moz-box-shadow: var(--bubble-shadow-right);
+    box-shadow: var(--bubble-shadow-right);
+}
+
+.message-bubble-pricing-left{
+    width: 180px;
+    background:  linear-gradient(-90deg,hsl(264, 100%, 61%),hsl(293, 100%, 63%) );
+    height: 25px;
+    display: flex;
+    flex-direction:  column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;   
+    color: white; 
+}
+
+.circle{
+    width: 0px;
+    height: 0px;
+    padding: 8px;
+    border: 1px dashed white;
+    border-radius: 999px;
+    margin-right: 10px;
+}
+
+.message{
+    min-width: 60%;
+    font-size: 10px;
+}
+
+.pricing{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.message-input{
+    width: 100%;
+    background-color: white;
+    height: 44px;
+    border-radius: 999px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 5px;
+}
+
+.message-placeholder{
+    margin-left:10px;
+    padding: 10px;
+    font-size: 12px;
+    color: var(--placeholder-text-color);
+}
+
+.message-input-enter{
+    width: 30px;
+    height: 30px;
+    border-radius:100%;
+    background-color: hsl(271, 36%, 24%);
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    left: 50px;
+    color: white;
+}
+
+

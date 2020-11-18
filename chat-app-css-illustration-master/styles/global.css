@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+:root{
+    --chat-left-text-color:   hsl(276, 54%, 51%);
+    --chat-right-text-color:   rgb(110, 93, 126);
+    --placeholder-text-color: hsl(206, 6%, 79%);
+    --main-heading-color: hsl(271, 36%, 24%);
+    --paragraph-color: hsl(270, 7%, 64%);
+    --bg-color: hsl(270, 20%, 96%);
+    --bubble-shadow-right: 0px 2px 30px 0px rgb(0 0 0 / q5%);
+    --bubble-shadow-left: 0px 1px 8px 0px rgb(0 0 0 / 15%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body,html{
+    background-color: var(--bg-color);
+}
+
+.container{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
