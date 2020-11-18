@@ -41,13 +41,8 @@ h1{
     width: 450px;
     border-radius: 0 0 299px 299px;
     background: linear-gradient(190deg,hsl(264, 100%, 61%),hsl(293, 100%, 63%) );
-<<<<<<< HEAD
     top: -160px;
     left: -200px;
-=======
-    top: -80px;
-    left: -280px;
->>>>>>> 8977a8b725fe28c3842fde27351813f79fd12a0e
 }
 
 .bottom-blob{
@@ -58,11 +53,7 @@ h1{
     border-radius: 299px 299px 0 0;
     background: linear-gradient(190deg,hsl(264, 100%, 61%),hsl(293, 100%, 63%) );
     bottom: -190px;
-<<<<<<< HEAD
     right: -280px;
-=======
-    right: -320px;
->>>>>>> 8977a8b725fe28c3842fde27351813f79fd12a0e
     opacity: 0.05;
 }
 
@@ -89,7 +80,6 @@ h1{
         padding: 0;
     }
 
-<<<<<<< HEAD
     .top-blob{
         top: -80px;
         left: -80px;
@@ -100,6 +90,4 @@ h1{
         right: -80px;
     }
 
-=======
->>>>>>> 8977a8b725fe28c3842fde27351813f79fd12a0e
 }
