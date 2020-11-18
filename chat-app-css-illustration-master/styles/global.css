@@ -22,6 +22,7 @@ body,html{
     background-color: var(--bg-color);
 }
 
+<<<<<<< HEAD
 .container{
     width: 100%;
     max-width: 100%;
@@ -29,3 +30,5 @@ body,html{
     position: relative;
 }
 
+=======
+>>>>>>> 8977a8b725fe28c3842fde27351813f79fd12a0e
