@@ -174,8 +174,6 @@ nav .call-to-action {
 .hero-header {
     position: relative;
     width: 100%;
-    height: auto;
-    max-height: 650px;
     display: flex;
     flex-direction: column;
     z-index: 0;
@@ -358,6 +356,7 @@ footer .column {
 
     .hero-header {
         height: 75vh;
+       
         justify-content: center;
     }
 
