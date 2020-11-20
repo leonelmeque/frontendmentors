@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles/stylessheet.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="background-pattern">
+
+    </div>
+    <div id="mapid" >
+
+    </div>
+    <div class="container">
+        <h1>IP Address Tracker</h1>
+        
+          <form class="text-input" target="_self">
+            <input type="text" name="search" placeholder="Search for any IP address or domain">
+          <button  type="button" onclick="fetchIpLocation()">
+            >
+          </button>
+          </form>
+     
+          <div class="tracker-container">
+            <div class="column">
+              <h3>IP Address</h3>
+              <div class="ip-address">
+                    No data fetched
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="column">
+              <h3>Location</h3>
+              <div class="location">
+                No data fetched
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="column">
+              <h3>Timezone</h3>
+              <div class="timezone">
+                No data fetched
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="column">
+              <h3>ISP</h3>
+              <div class="isp"> 
+                No data fetched
+              </div>
+            </div>
+          </div>
+          <script type="module" src="js/constants.js"></script>
+          <script type="module" src="js/main.js"></script>
+    </div>
+  </div>
+</body>
+</html>

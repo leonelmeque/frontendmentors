@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    min-height: 800px;
+}
+
+
+.background-pattern{
+    background: url('../images/pattern-bg.png');
+    width: 100%;
+    height: 250px;
+    background-size: contain;
+}
+
+.container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    z-index: 2;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size:1.5em;
+    color:white;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+h3{
+    font-size: 0.5em;
+    font-weight: 700;
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.text-input{
+    display: flex;
+    width: 80%;
+    max-width: 500px;
+}
+
+input{
+    margin: 0;
+    padding: 20px 18px;
+    border-radius: 10px 0 0 10px;
+    border:none;
+    width: 100%;
+}
+
+button{
+    padding: 20px 22px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: hsl(0, 0%, 4%);
+    color: white;
+}
+
+.tracker-container{
+    background-color: white;
+    margin-top: 30px;
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    border: none;
+    border-radius: 10px;
+}
+
+.tracker-container .column{
+    margin:10px 0
+}
+
+.ip-address, .location, .timezone, .isp{
+    font-weight: 500;
+    color: hsl(0, 0%, 17%);
+    display: flex;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.divider{
+    display: none;
+}
+
+#mapid{
+    height: 100%;
+    position: relative;
+    
+    z-index: -1;
+}
+
+@media screen and (min-width:1440px){
+    h3{
+        text-align:left;
+    }
+    .tracker-container{
+        flex-direction: row;
+        min-height: 100px;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin-top: 60px;
+    }
+
+    .tracker-container .column{
+      width: 24%;
+      padding: 0px 0 0 0 ;
+      margin-top: 20px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    .tracker-container .divider{
+        display: block;
+        width: 1px;
+        height: 60%;
+        align-self:center ;
+        background-color: hsl(0, 0%, 59%);
+    }
+
+    .ip-address, .location, .timezone, .isp{
+        text-align: left;
+    }
+    
+}
