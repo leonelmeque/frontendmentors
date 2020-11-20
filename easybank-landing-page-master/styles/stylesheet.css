@@ -62,7 +62,7 @@ h1 {
     margin-bottom: 20px;
     font-weight: 500;
     color: var(--dark-blue);
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 h2 {
@@ -175,6 +175,7 @@ nav .call-to-action {
     position: relative;
     width: 100%;
     height: auto;
+    max-height: 650px;
     display: flex;
     flex-direction: column;
     z-index: 0;
@@ -197,12 +198,18 @@ nav .call-to-action {
 .hero-blob {
     position: absolute;
     z-index: -1;
-    top: -520px;
-    left: -90%;
+    top: -5%;
+    right: -70%;
 }
 
 .hero-phone {
     order: 1;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.hero-blob img{
+    width: 100%;
 }
 
 .hero-phone img {
@@ -366,13 +373,13 @@ footer .column {
     }
 
     .hero-blob {
-        top: -25%;
-        left: 660px;
+        top: -140px;
+        right: -25%;
         height: 100vh;
     }
 
     .hero-blob img {
-        width: 150%;
+        width: 100%;
         overflow: hidden;
         max-width: 1170px;
     }
