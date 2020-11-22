@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylesheet/styles.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <div class="container">
+        <div class="site-logo">
+          <img src="images/logo.svg" alt="Company Logo">
+        </div>
+      </div>
+    </nav>
+    <div class="right-container">
+      <div class="container">
+        <h1><span class='heading-alternated-color'>
+            We're
+          </span>
+          coming soon
+        </h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <div class="input-flex">
+          <input aria-label="text input" type="text" placeholder="Email Address">
+          <div class="input-icon">
+            <img src="images/icon-arrow.svg" alt="arrow">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="left-container">
+      <picture>
+        <source media="(max-width: 400px)" srcset="images/hero-mobile.jpg">
+        <source media="(min-width: 1024px)" srcset="images/hero-desktop.jpg">
+        <img src="images/hero-mobile.jpg" alt="girl photo">
+      </picture>
+    </div>
+  </div>
+</body>
+
+</html>
