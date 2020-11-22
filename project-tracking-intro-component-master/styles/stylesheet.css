@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
 :root {
     --very-dark-blue: hsl(230, 29%, 20%);
     --dark-grayish-blue: hsl(230, 11%, 40%);
@@ -5,12 +7,10 @@
     --light-grayish-blue: hsl(207, 33%, 95%);
     --red-primary: hsl(0, 100%, 68%);
 
-    --h1-fz: 1.7em;
+    --h1-fz: 2em;
     --body-text-fs: 1em;  
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 * {
     margin: 0;
@@ -25,7 +25,12 @@
 
 h1 {
     font-size: var(--h1-fz);
-    margin: 0.5em 0;
+    margin: 0 0 0.5em 0;
+    color: var(--very-dark-blue);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 1px;
 }
 
 p {
@@ -53,10 +58,11 @@ ul{
 }
 
 .navbar-collapse a{
-    font-size: 0.9em;
+    font-size: 1em;
     color: var(--very-dark-blue);
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .navbar-last-link{
@@ -68,6 +74,7 @@ ul{
     width: 100%;
     overflow: hidden;
     height: 100%;
+    
 }
 
 .container {
@@ -77,7 +84,7 @@ ul{
 }
 
 nav {
-    height: 80px;
+    height: 150px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -113,7 +120,6 @@ nav .container {
     z-index: 2;
     text-align: center;
     width: 100%;
-   
     background-color: white;
     border-radius: 4px;
     position: absolute;
@@ -172,7 +178,7 @@ header .container {
 }
 
 .small-head-line {
-    margin: 1em 0;
+    margin: 0 0 1em 0;
 }
 
 .small-head-line span:nth-child(1) {
@@ -197,7 +203,7 @@ header .container {
 .call-to-action {
     display: flex;
     align-items: center;
-    margin: 2.5em 0;
+    margin: 2em 0 0;
 }
 
 .call-to-action-btn {
@@ -210,6 +216,7 @@ header .container {
     color: white;
     font-family: 'Barlow Condensed', sans-serif;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .call-to-action p {
@@ -248,7 +255,7 @@ header .container {
 @media screen and (min-width: 1024px) {
 
     :root{
-        --h1-fz: 3em;
+        --h1-fz: 4em;
         --body-text-fs: 1.2em;
     }
 
@@ -270,7 +277,7 @@ header .container {
 
     .header-content {
         order: 1;
-        width: 50%;
+        width: 60%;
         text-align: left;
     }
 
@@ -316,4 +323,10 @@ header .container {
     }
   
 
+}
+
+@media screen and (min-width:1600px){
+    .container{
+        width: 60%;
+    }
 }
