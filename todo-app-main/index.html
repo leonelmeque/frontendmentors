@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="stylesheet/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+
+</head>
+<body class="theme--dark">
+  <div class="wrapper">
+    <div class="backdrop">
+    </div>
+        <header class="header">
+          <div class="container">
+          <h1 class="header__title">TODO</h1>
+          <div class="header__theme-switcher">
+            <img src="images/icon-moon.svg" class="theme-icon--dark" alt="Dark Mode">
+            <img src="images/icon-sun.svg" class="theme-icon--light" alt="Light Mode">
+          </div>
+          </div>
+        </header>
+
+        <main class="main">
+          <div class="container">
+          <div class="input__area">
+            <div class="todo__icon">
+              <img src="images/icon-check.svg" alt="check">
+            </div>
+            <input type="text" 
+                   class="input__todo" 
+                   onkeydown="addTodo(event)"
+                   placeholder="Create a new todo.." />
+          </div>
+          <ul class="todos all">
+          </ul>
+          <div class="todos__status-bar" id="todos-status">
+            <div class="todos__amount">
+              No Items
+            </div>
+            <div class="todos__filter">
+              <span class="todos--all focus" onclick="filterTodos('all')">All</span>
+              <span class="todos--active" onclick="filterTodos('active')">Active</span>
+              <span  class="todos--completed" onclick="filterTodos('completed')">Completed</span>
+            </div>
+            <div class="todos_clear-all" onclick="clearAllCompletedTodos(event)">
+              Clear Completed
+            </div> 
+          </div>
+        </main>
+        <div class="container">
+          <div class="todos__filter-mobile">
+            <span class="todos--all focus" onclick="filterTodos('all')">All</span>
+            <span class="todos--active" onclick="filterTodos('active')">Active</span>
+            <span  class="todos--completed" onclick="filterTodos('completed')">Completed</span>
+          </div>
+        </div>
+        <div class="hint">
+          Drag and drop to render list
+        </div>
+        </div>
+        
+    </div>
+  </div>
+  <script src="js/main.js" type="application/javascript"></script>
+</body>
+</html>

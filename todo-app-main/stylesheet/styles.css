@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+}
+
+:root {
+    --checkbox-gradient: linear-gradient(90deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.theme--light {
+   --primary-color: hsl(0, 0%, 98%);
+   --secondary-color:hsl(235, 19%, 35%);
+   --ternary-color:hsl(233, 11%, 84%);
+   --primary-text-color: hsl(235, 19%, 35%);
+   --secondary-text-color: hsl(236, 9%, 61%) ;
+    --backdrop: url("../images/bg-desktop-light.jpg");
+    --todo-shadow: 0px 15px 117px -33px rgba(0, 0, 0, 0.15);
+}
+
+.theme--dark {
+    --primary-color: hsl(235, 24%, 19%);
+    --secondary-color:hsl(0, 0%, 98%);
+    --ternary-color:hsl(235, 19%, 35%);
+    --primary-text-color: hsl(234, 39%, 85%);
+    --secondary-text-color: hsl(235, 19%, 35%);
+    --background-color: hsl(235, 21%, 11%);
+    --backdrop: url("../images/bg-desktop-dark.jpg");
+    --todo-shadow: none;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: var(--background-color);
+}
+
+.backdrop {
+    background: var(--backdrop);
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+}
+
+.header,
+.main {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+}
+
+.main .container {
+    box-shadow: var(--todo-shadow);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    color: white;
+}
+
+.theme--dark .theme-icon--dark {
+    display: none;
+}
+
+.theme--light .theme-icon--light {
+    display: none;
+}
+
+.input__area {
+    width: 100%;
+    
+    position: relative;
+}
+
+input.input__todo:focus,
+input.input__todo:not(focus) {
+    height: 57px;
+    color: var(--secondary-color)
+}
+
+.todo__icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--ternary-color);
+    border-radius: 999px;
+    top: 18px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo__icon img {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.todo__icon.show img {
+    display: inline-block;
+}
+
+.input__todo {
+    width: 100%;
+    padding: 15px 20px 15px 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+.todos {
+    display: flex;
+    flex-flow: wrap column;
+    margin: 20px 0 0;
+}
+
+.todos.all .todos__item.marked {
+    display: flex;
+}
+
+.todos.active .todos__item.marked {
+    display: none;
+}
+
+/*I love this*/
+.todos.completed [class=todos__item]{
+    display: none;
+}
+
+
+.todos__item,
+.todos__filter-mobile {
+    padding: 0px 20px 0px 15px;
+    height: 57px;
+    background: var(--primary-color);
+    color: var(--primary-text-color);
+    display: flex;
+    border-bottom: 1px solid var(--ternary-color);
+    font-size: 0.8em;
+    align-items: center;
+}
+
+.todos__item:nth-child(1) {
+    border-radius: 5px 5px 0 0;
+}
+
+.custom-checkbox-container {
+    padding-left: 30px;
+    display: block;
+    position: relative;
+    flex: 1;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 999px;
+    border: 1px solid var(--ternary-color);
+}
+
+.custom-checkbox-container input[type=checkbox] {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+.custom-checkbox-container input[type=checkbox]:checked~.checkmark {
+    background: var(--checkbox-gradient);
+}
+
+.custom-checkbox-container input[type=checkbox]:checked~.checkmark:after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 4px;
+    left: 4px;
+    width: 100%;
+    height: 100%;
+    background: url('../images/icon-check.svg');
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+}
+
+.custom-checkbox-container [type=checkbox]:checked+.label__text {
+    text-decoration: line-through;
+    color: var(--secondary-text-color);
+}
+
+.todos__status-bar {
+    padding: 0px 15px;
+    background: var(--primary-color);
+    color: var(--ternary-color);
+    display: flex;
+    font-size: 0.7em;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 5px 5px;
+    height: 57px;
+    margin: 0 0 20px;
+}
+
+.todo {
+    flex: 5;
+}
+
+.todos__item-remove-icon {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.todos__filter {
+    display: none;
+}
+
+.todos__filter-mobile {
+    padding: 0;
+    border-radius: 5px;
+    border: none;
+    justify-content: space-around;
+    height: 57px;
+    margin-bottom: 20px;
+    box-shadow: var(--todo-shadow);
+    color: var(--secondary-text-color);
+    font-weight: bold;
+}
+
+
+.todos_clear-all{
+    text-align: right;
+}
+.todos__amount,
+.todos_clear-all{
+    flex:1;
+    cursor: not-allowed;
+
+}
+
+
+.todos--all:hover, 
+.todos--active:hover, 
+.todos--completed:hover,
+.todos_clear-all:hover{
+    color: var(--primary-text-color);
+    cursor: pointer;
+}
+
+.focus{
+    color: hsl(220, 98%, 61%);
+}
+
+.hint {
+    text-align: center;
+    color: var(--ternary-color);
+
+}
+
+@media screen and (min-width: 1020px){
+
+    .header .container {
+       padding-top: 50px;
+    }
+
+    .backdrop {
+       
+        height: 270px;
+       
+    }
+    
+
+    .todos__filter-mobile{
+        display: none;
+    }
+
+    .todos__filter{
+        display: flex;
+        flex:2;
+        justify-content: space-evenly;
+    }
+}
