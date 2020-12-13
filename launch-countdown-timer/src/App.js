@@ -50,9 +50,7 @@ function App() {
       if(seconds===0){
         setMinutes(minutes-1);
         setSeconds(60);
-
         animate(2);
-
         if(minutes===0){
           setHours(hours-1);
           setMinutes(60);
@@ -72,7 +70,7 @@ function App() {
   useEffect(()=>{
    
      return function cleanup(){
-       console.log('unmounting component')
+       
      }
   },[])
 
@@ -83,7 +81,7 @@ function App() {
       <div className="background__stars move"></div>
       </div>
         <div className="container">
-          <h1>We're Launching Soon</h1>
+          <h1>We're Launching SOON</h1>
 
         <div className="clock">
           <Card time={days} title="Days" />
