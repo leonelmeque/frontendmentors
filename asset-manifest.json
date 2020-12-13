@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/leonelmeque/frontendmentors/tree/main/launch-countdown-timer/static/css/main.944ea440.chunk.css",
+    "main.js": "/leonelmeque/frontendmentors/tree/main/launch-countdown-timer/static/js/main.b0a21980.chunk.js",
+    "main.js.map": "/leonelmeque/frontendmentors/tree/main/launch-countdown-timer/static/js/main.b0a21980.chunk.js.map",
+    "runtime-main.js": "/leonelmeque/frontendmentors/tree/main/launch-countdown-timer/static/js/runtime-main.ba3562c8.js",
+    "runtime-main.js.map": "/leonelmeque/frontendmentors/tree/main/launch-countdown-timer/static/js/runtime-main.ba3562c8.js.map",
+    "static/js/2.4e2a2f90.chunk.js": "/leonelmeque/frontendmentors/tree/main/launch-countdown-timer/static/js/2.4e2a2f90.chunk.js",
+    "static/js/2.4e2a2f90.chunk.js.map": "/leonelmeque/frontendmentors/tree/main/launch-countdown-timer/static/js/2.4e2a2f90.chunk.js.map",
+    "static/js/3.ad152333.chunk.js": "/leonelmeque/frontendmentors/tree/main/launch-countdown-timer/static/js/3.ad152333.chunk.js",
+    "static/js/3.ad152333.chunk.js.map": "/leonelmeque/frontendmentors/tree/main/launch-countdown-timer/static/js/3.ad152333.chunk.js.map",
+    "index.html": "/leonelmeque/frontendmentors/tree/main/launch-countdown-timer/index.html",
+    "static/css/main.944ea440.chunk.css.map": "/leonelmeque/frontendmentors/tree/main/launch-countdown-timer/static/css/main.944ea440.chunk.css.map",
+    "static/js/2.4e2a2f90.chunk.js.LICENSE.txt": "/leonelmeque/frontendmentors/tree/main/launch-countdown-timer/static/js/2.4e2a2f90.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/leonelmeque/frontendmentors/tree/main/launch-countdown-timer/static/media/pattern-hills.815d688f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba3562c8.js",
+    "static/js/2.4e2a2f90.chunk.js",
+    "static/css/main.944ea440.chunk.css",
+    "static/js/main.b0a21980.chunk.js"
+  ]
+}
