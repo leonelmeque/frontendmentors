@@ -45,7 +45,6 @@ function App() {
   }
 
   const runTime = () => {
-    
     setSeconds(seconds-1);
     animate(3);
       if(seconds===0){
