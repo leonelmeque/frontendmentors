@@ -23,7 +23,7 @@ const Card = ({time, title})=>{
     <div className="time-card">
             <div className="time-card__flipper">
               <div className="time-card__top"></div>
-              {time>10 ? time : `0${time}`}
+              {time>=10 ? time : `0${time}`}
             </div>
             <div className="time-card__title">{title}</div>
   </div>
